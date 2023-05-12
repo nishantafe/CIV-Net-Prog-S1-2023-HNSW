@@ -22,8 +22,7 @@ def scan(an_ip, a_port):
         print("\033[32m" + status_message)  # display the message in the console
         log_file_out.write(status_message + "\n")  # write (append) the message to the log file
     else:
-        pass
-        # print(f"\033[31m{an_ip}:{a_port:<5d} Closed/Filtered or host is offline | Time: {timestamp}")
+        print(f"\033[31m{an_ip}:{a_port:<5d} Closed/Filtered or host is offline | Time: {timestamp}")
     sock.close()
     log_file_out.close()
 
