@@ -10,6 +10,7 @@ import os
 # Change or set the current working directory to the location of this file
 os.chdir(os.path.dirname(__file__))
 
+
 def write_event_viewer_log(status_messages_list, event_type):
     win32evtlogutil.ReportEvent(
         appName="CheckIPPort - IP/Port Scanner",
